@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="\assert\css\header_footer.css">
+            
+    <style >  
+   * body
+    {
+        
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        box-sizing: border-box; 
+        background-color: #464242;       
+    } 
+ 
+    .input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 370px;
+    font-size: medium;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    background-color:white;
+    color: black;
+    padding: 10px;
+}
+button{
+    margin-left: 32%;
+    align-content: center;
+    width: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #ff6600;    
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+nav a{
+    text-decoration: none;        
+    color: #0b3f64;
+    padding: 25px;
+    display: inline-block;
+     }
+button:hover{
+    cursor: pointer;
+    background-color: red;
+
+}
+    .login_container  
+    {
+        
+        margin-top: 50px;             
+        position:absolute;
+        border-radius: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        opacity: 0.9;
+        box-sizing: content-box; 
+        min-height: 850px;
+        height: auto;
+        width: 500px;
+        padding:0px;
+        background-color:rgba(143, 139, 136, 0.637);
+    }
+    .login_box{
+        padding-top: 60px;
+        color:white;         
+        font-size: 20px;
+        position:absolute;
+        top: 40%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
+       </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNovid</title>
+</head>
+<body>
+    
+   
+    <div style="padding-top: 20px;">
+        <hr><h1 style="color: white; font-weight: lighter;margin-left: 500px;">WelCome To TechNovid</h1><hr><br> 
+       
+          <div class="login_container" > 
+              
+             <div class="login_box" style="box-sizing: border-box;margin-left: 30%;">    
+
+                <form  action="Login.html" onsubmit="return validation()"><br><br><br>
+                <label style="color: white;margin-left:40%;">Register</label>
+                <br><br>   
+                
+                <input class="input" type="text" id="name" placeholder="Name" onkeypress="return onlyAlphabets(event,this);" ><br><br>
+                <input class="input" type="email" id="useremail"  placeholder="Email" ><br><br>
+                <input class="input" type="text" id="course" placeholder="Course" ><br><br>
+                <input class="input" type="text" id="collegename" placeholder="CollegeName" ><br><br>
+                <input class="input" type="text" id="state" placeholder="State" ><br><br>
+                <input class="input" type="number" id="age" placeholder="Age" ><br><br>
+                <input  type="number" maxlength="10" id="phone" class="input" placeholder="Phone Number" ><br><br>             
+                <textarea class="input" type="address" id="address" rows="2" cols="50" name="text" placeholder="Address"></textarea><br><br>
+                <input class="input" type="text" id="username" placeholder="User Name" ><br><br>
+                <input class="input" type="text" id="psw"  placeholder="Password" ><valid style="font-size: 15px;"></valid><br><br><br>
+                <button style="margin-left:35%" title="Submit" >Register</button>
+                <!-- <button style="margin-left:35%" >R</button> -->
+               
+            </form>
+             </div>    
+           </div> 
+                        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
+
